@@ -15,24 +15,24 @@ import "../styles/global.css";
       class="bg-white p-8 rounded-2xl shadow-xl w-96 text-center"
     >
       <h1 class="text-2xl font-bold text-pink-600 mb-6">
-        Debido a fuentes de validación de información realizada por Joseluis,
-        responde correctamente abajo
+        que tanto me conoces_xd
       </h1>
 
-      <p class="mb-4 text-gray-700">¿Cuál es mi plato favorito?</p>
+      <p class="mb-4 text-gray-700">¿cual es mi edad?</p>
 
       <div id="opciones" class="space-y-3">
         <button
           class="opcion w-full py-2 border-2 border-pink-200 rounded-lg hover:bg-pink-50"
-          data-valor="20">Aji de pollo</button
+          data-valor="20">22</button
+        >
+        /*este es el correcto */
+        <button
+          class="opcion w-full py-2 border-2 border-pink-200 rounded-lg hover:bg-pink-50"
+          data-valor="21">21</button
         >
         <button
           class="opcion w-full py-2 border-2 border-pink-200 rounded-lg hover:bg-pink-50"
-          data-valor="21">Locro de zapallo</button
-        >
-        <button
-          class="opcion w-full py-2 border-2 border-pink-200 rounded-lg hover:bg-pink-50"
-          data-valor="22">Arroz chaufa</button
+          data-valor="22">23</button
         >
       </div>
 
@@ -57,7 +57,7 @@ import "../styles/global.css";
 
           if (valor === "21") {
             mensaje.textContent =
-              "¡Correcto! Chio, eres una genia, me alegra saber que sepas eso de mí.... ❤️";
+              "¡Correcto!, me alegra saber que sepas eso de mí.... ❤️";
             mensaje.classList.remove("hidden", "text-red-500");
             mensaje.classList.add("text-green-600");
             opciones.forEach((o) => (o.disabled = true));
@@ -71,7 +71,7 @@ import "../styles/global.css";
         });
       });
 
-      // Lógica para reiniciar
+      // Lógica para reiniciar de nuevo cuando ocurra error
       btnReiniciar.addEventListener("click", () => {
         mensaje.classList.add("hidden");
         btnReiniciar.classList.add("hidden");
